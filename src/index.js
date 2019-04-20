@@ -27,7 +27,12 @@ module.exports = function gatsbyRemarkCodeTitles(
     const titleNode = {
       type: 'html',
       value: `
-<div class="${className.join(' ').trim()}">${title}</div>
+<div class="${className
+        .map(c => `${c}-container`)
+        .join(' ')
+        .trim()}"><span class="${className
+        .join(' ')
+        .trim()}">${title}</span></div>
       `.trim(),
     };
 

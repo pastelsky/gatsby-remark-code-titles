@@ -72,7 +72,7 @@ describe(`adding title`, () => {
 
     expect(htmlNode.type).toBe(`html`);
     expect(htmlNode.value).toBe(
-      `<div class="gatsby-code-title">hello-world.js</div>`
+      `<div class=\"gatsby-code-title-container\"><span class=\"gatsby-code-title\">hello-world.js</span></div>`
     );
   });
 
